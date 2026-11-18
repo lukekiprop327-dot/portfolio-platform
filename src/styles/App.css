@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fafafa;
+  color: #222;
+}
+
+.app {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+form.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+button {
+  align-self: flex-start;
+  padding: 0.4rem 1.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #eee;
+}
+
+.search {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.project-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+
+.thumb {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: #f4f4f4;
+}
+
+.project-card h3,
+.project-card p {
+  margin: 0;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 0 0.5rem;
+  }
+}
